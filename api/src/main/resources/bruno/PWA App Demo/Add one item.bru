@@ -1,0 +1,22 @@
+meta {
+  name: Add one item
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/items
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Abricots",
+    "quantity": 10
+  }
+}
+
+settings {
+  encodeUrl: true
+}

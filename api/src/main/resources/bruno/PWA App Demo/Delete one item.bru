@@ -1,0 +1,23 @@
+meta {
+  name: Delete one item
+  type: http
+  seq: 4
+}
+
+delete {
+  url: http://localhost:8080/items/4665ce14-12c9-4ad6-aba4-d02473647e29
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+    "uuid": "868833e7-d2f2-4653-9887-484656c79771",
+    "name": "Abricots",
+    "quantity": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+}
